@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>솔로의 식탁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		#container {
+			width:100%;
+		}
+		header {
+			width:100%;			
+		}
+		header h1 {
+			font-size:3em;
+            text-align: center;
+		}
+		#menus {
+			width:100%;         
+		}
+        #menus > div {
+            position:relative;
+            height:400px;
+            border:1px solid black;
+            margin-bottom:15px;
+        }
+        #menu1, #menu2, #menu3, #menu4, #menu5 {
+            width:100%;
+        }
+        #menus h2 {
+            position:absolute;
+            padding:5px;
+            font-size:2em;
+            color:white;
+            text-shadow:3px 3px 5px black;
+            right:3%;
+            bottom:10px;
+        }
+        #menu1 {
+            background:url("images/dish1.jpg") no-repeat center;
+            background-size:cover;
+        }
+        #menu2 {
+            background:url("images/dish2.jpg") no-repeat center;
+            background-size:cover;
+        }
+        #menu3 {
+            background:url("images/dish3.jpg") no-repeat center;
+            background-size:cover;
+        }
+        #menu4 {
+            background:url("images/dish4.jpg") no-repeat center;
+            background-size:cover;
+        }
+        #menu5 {
+            background:url("images/dish5.jpg") no-repeat center;
+            background-size:cover;
+        }
+        footer {
+            width:100%;
+            background:#373737;
+            height:200px;
+        }
+        footer p {
+            font-size:1.2em;
+            color:#eee;
+            text-align:center;
+            line-height:200px;
+        }
+   </style>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>솔로의 식탁</h1>
+		</header>
+		<section id="menus">
+			<div id="menu1">
+                <h2>밥/죽</h2>
+			</div>
+			<div id="menu2">
+                <h2>국/찌개</h2>
+			</div>
+			<div id="menu3">
+                <h2>반찬</h2>
+			</div>
+			<div id="menu4">
+                <h2>일품요리</h2>
+			</div>
+			<div id="menu5">
+                <h2>음료/칵테일</h2>
+			</div>
+		</section>
+		<section id="notice">
+
+		</section>
+		<footer>
+            <p>솔로의 식탁</p>
+		</footer>
+	</div>
+</body>
+</html>
