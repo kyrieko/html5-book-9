@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Transform</title>
+<style>
+  #wrapper {
+    width:500px;
+    height:auto;
+    margin:50px auto;
+  }
+  #wrapper .box {
+    border:4px solid #ccc;
+    position:relative;
+    width:350px;
+    height:300px;
+    overflow:hidden;
+  }
+  .box .photo {
+    position:absolute;
+    left:0;
+  }
+  .box .caption {
+    position:absolute;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    z-index:100;
+    width:200px;
+    height:300px;
+    left:0;
+    padding:20px;
+  }
+  .box .caption p {
+    position:absolute;
+    bottom:50px;
+  }
+</style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="box">
+      <img src="images/friends.jpg" class="photo">
+      <div class="caption">
+        <p>친구란, <br> 두 몸에 깃든 하나의 영혼.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

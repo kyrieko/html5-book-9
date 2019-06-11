@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Transform</title>
+<style>
+  #wrapper {
+    width:500px;
+    height:auto;
+    margin:50px auto;
+  }
+  #wrapper .box {
+    border:4px solid #ccc;
+    position:relative;
+    width:350px;
+    height:300px;
+    overflow:hidden;
+  }
+    .box .photo {
+      position:absolute;
+      left:0;
+      -webkit-transition: all 300ms ease;
+      -moz-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      transition: all 300ms ease;
+    }
+    .box .caption {
+      position:absolute;
+      background: rgba(0,0,0,0.4);
+      color: #fff;
+      z-index:100;
+      width:200px;
+      height:300px;
+      left:350px;
+      padding:20px;
+      -webkit-transition: all 300ms linear;
+      -moz-transition: all 300ms linear;
+      -o-transition: all 300ms linear;
+      transition: all 300ms linear;
+    }
+    .box .caption p {
+      position:absolute;
+      bottom:50px;
+    }
+    .box:hover .caption {
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+    .box:hover .photo {
+        -webkit-transform: translateX(-50px);
+        -moz-transform: translateX(-50px);
+        -o-transform: translateX(-50px);
+        -ms-transform: translateX(-50px);
+        transform: translateX(-50px);
+    }
+</style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="box">
+      <img src="images/friends.jpg" class="photo">
+      <div class="caption">
+        <p>친구란, <br> 두 몸에 깃든 하나의 영혼.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
