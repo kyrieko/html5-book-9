@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>label 태그 사용</title>
+		<style>
+			ul {
+				list-style:none;  /* 불릿 없앰 */
+			}
+			li {
+				margin:20px;  /* 각 항목간 마진 */
+			}
+			li label {   
+				width:70px;   /* 레이블 너비 */
+				float:left;  /* 왼쪽부터 시작 */
+				font-size:14px;  /* 글자 크기 */
+				font-weight:bold;  /* 글자 굵기 */
+				line-height:25px;  /* 줄간격 */
+			}
+		</style>
+</head>
+<body>
+	<form action="login.php" method="post">
+		<ul>
+			<li>
+				<label for="id">아이디</label>
+				<input type="text" id="id">
+			</li>
+			<li>
+				<label for="pw">비밀번호</label>
+				<input type="password" id="pw">
+			</li>
+			<li>				
+				<input type="submit" title="로그인" value="로그인">
+			</li>
+		</ul>
+	</form>
+</body>
+</html>
